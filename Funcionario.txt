@@ -1,0 +1,18 @@
+public class Funcionario extends Pessoa {
+    private int numeroIdentificacao;
+    private double salario;
+
+    public Funcionario(String nome, int idade, int numeroIdentificacao, double salario) {
+        super(nome, idade);
+        this.numeroIdentificacao = numeroIdentificacao;
+        this.salario = salario;
+    }
+
+    
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Número de Identificação: " + numeroIdentificacao);
+        System.out.println("Salário: " + salario);
+    }
+}

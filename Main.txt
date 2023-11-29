@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        // objetos de funcionários e gerentes
+        Funcionario funcionario1 = new Funcionario("João", 25, 101, 50000.0);
+        Gerente gerente1 = new Gerente("Maria", 35, 201, 80000.0, "RH");
+
+        // Array funcionários
+        Pessoa[] funcionarios = new Pessoa[2];
+        funcionarios[0] = funcionario1;
+        funcionarios[1] = gerente1;
+
+        // Exibir 
+        for (Pessoa pessoa : funcionarios) {
+            if (pessoa instanceof Funcionario) {
+                ((Funcionario) pessoa).exibirInformacoes();
+            } else if (pessoa instanceof Gerente) {
+                ((Gerente) pessoa).exibirInformacoes();
+            }
+            System.out.println("----------------------");
+        }
+    }
+}
