@@ -9,7 +9,7 @@ public class Main {
         funcionarios[0] = funcionario1;
         funcionarios[1] = gerente1;
 
-        // Exibir 
+        // Exibir info
         for (Pessoa pessoa : funcionarios) {
             if (pessoa instanceof Funcionario) {
                 ((Funcionario) pessoa).exibirInformacoes();
